@@ -1,36 +1,37 @@
-abstract class Bank{
-    abstract void getDetails();
-}
-
-class Sbi extends Bank{
-    void getDetails(){
-        double roi=5.5;
-        System.out.println("The rate of interest of SBI Bank is "+roi+"%");
+Q2.Create 3 sub class of bank SBI,BOI,ICICI all 4 should have method called getDetails which provide there specific details like rateofinterest etc,print details of every banks.
+Ans. abstract class Bank{
+        abstract void getDetails();
     }
-}
-
-class BOI extends Bank{
-    void getDetails(){
-        double roi=4.5;
-        System.out.println("The rate of interest of BOI Bank is "+roi+"%");
+    
+    class Sbi extends Bank{
+        void getDetails(){
+            double roi=5.5;
+            System.out.println("The rate of interest of SBI Bank is "+roi+"%");
+        }
     }
-}
-
-class ICICI extends Bank{
-    void getDetails(){
-        double roi=6.5;
-        System.out.println("The rate of interest of ICICI Bank is "+roi+"%");
+    
+    class BOI extends Bank{
+        void getDetails(){
+            double roi=4.5;
+            System.out.println("The rate of interest of BOI Bank is "+roi+"%");
+        }
     }
-}
-
-public class Main{
-    public static void main(String args[]){
-        Bank sbi= new Sbi();
-        Bank boi=new BOI();
-        Bank icici=new ICICI();
-
-        sbi.getDetails();
-        boi.getDetails();
-        icici.getDetails();
+    
+    class ICICI extends Bank{
+        void getDetails(){
+            double roi=6.5;
+            System.out.println("The rate of interest of ICICI Bank is "+roi+"%");
+        }
     }
-}
+    
+    public class Main{
+        public static void main(String args[]){
+            Bank sbi= new Sbi();
+            Bank boi=new BOI();
+            Bank icici=new ICICI();
+    
+            sbi.getDetails();
+            boi.getDetails();
+            icici.getDetails();
+        }
+    }
