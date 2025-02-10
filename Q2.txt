@@ -1,0 +1,36 @@
+abstract class Bank{
+    abstract void getDetails();
+}
+
+class Sbi extends Bank{
+    void getDetails(){
+        double roi=5.5;
+        System.out.println("The rate of interest of SBI Bank is "+roi+"%");
+    }
+}
+
+class BOI extends Bank{
+    void getDetails(){
+        double roi=4.5;
+        System.out.println("The rate of interest of BOI Bank is "+roi+"%");
+    }
+}
+
+class ICICI extends Bank{
+    void getDetails(){
+        double roi=6.5;
+        System.out.println("The rate of interest of ICICI Bank is "+roi+"%");
+    }
+}
+
+public class Main{
+    public static void main(String args[]){
+        Bank sbi= new Sbi();
+        Bank boi=new BOI();
+        Bank icici=new ICICI();
+
+        sbi.getDetails();
+        boi.getDetails();
+        icici.getDetails();
+    }
+}
