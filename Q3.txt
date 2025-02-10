@@ -2,7 +2,7 @@ Q3.Explain the difference between method overloading and method overriding in Ja
 Ans.  Method overloading occurs when multiple methods in the same class have the same name but different parameter lists (number, types, or order of parameters). Return type can be different, but it doesn't determine overloading.
       Example of Method Overloading
       
-      class Calculator {
+      class Main {
           int add(int a, int b) {
               return a + b;
           }
