@@ -20,7 +20,7 @@ Ans. import java.util.Scanner;
 	                break;
 	            }
 	            default:
-	                System.out.println("Charcter is consonant");
+	                System.out.println("Character is consonant");
 	
 	        }
 	
