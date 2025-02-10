@@ -1,27 +1,28 @@
-import java.util.Scanner;
+Q1.Write a Java method that takes a character input parameter and determines whether it's a vowel (a, e, i, o, u) or a consonant using a switch statement.
+Ans. import java.util.Scanner;
 
-public class Main {
-
-    public static void main(String[] args) {
-	// write your code here
-        Scanner in=new Scanner(System.in);
-        System.out.println("Enter an alphabet");
-        char ch=in.next().charAt(0);
-	ch=Character.toLowerCase(ch);
-        switch (ch){
-            case 'a' :
-            case 'e' :
-            case 'i' :
-            case 'o' :
-            case 'u' :
-            {
-                System.out.println("Character is vowel");
-                break;
-            }
-            default:
-                System.out.println("Charcter is consonant");
-
-        }
-
-    }
-}
+	public class Main {
+	
+	    public static void main(String[] args) {
+	        // write your code here
+	        Scanner in=new Scanner(System.in);
+	        System.out.println("Enter a alphabet");
+	        char ch=in.next().charAt(0);
+	        ch=Character.toLowerCase(ch);
+	        switch (ch){
+	            case 'a' :
+	            case 'e' :
+	            case 'i' :
+	            case 'o' :
+	            case 'u' :
+	            {
+	                System.out.println("Character is vowel");
+	                break;
+	            }
+	            default:
+	                System.out.println("Charcter is consonant");
+	
+	        }
+	
+	    }
+	}
