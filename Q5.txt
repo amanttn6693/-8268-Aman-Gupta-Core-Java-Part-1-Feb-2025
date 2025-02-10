@@ -1,0 +1,22 @@
+Q5. Write a Java program that reads an integer from the user and divides 100 by the entered number. Implement exception handling to manage scenarios where the user enters zero (which causes a division by zero) and when the user inputs a non-integer value.
+Ans. import java.util.Scanner;
+      public class Main {
+          public static void main(String[] args) {
+              Scanner in = new Scanner(System.in);
+      
+              try {
+                  System.out.print("Enter a number to divide 100 by: ");
+                  int number = in.nextInt();
+      
+                  int result = 100 / number;
+                  System.out.println("Result: 100 / " + number + " = " + result);
+      
+              } catch (ArithmeticException e) {
+                  System.out.println("Error: Cannot divide by zero!");
+      
+              } catch (java.util.InputMismatchException e) {
+                  System.out.println("Error: Please enter a valid integer.");
+      
+              }
+          }
+      }
